@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        *,
+        :before,
+        :after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            min-height: 100%;
+        }
+
+        body {
+            font-family: 'Gilroy', sans-serif;
+        }
+
+        .alert-page-wrapper {
+            text-align: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .alert-page-text {
+            font-weight: 800;
+            line-height: 1;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #fff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            width: 100%;
+            height: 100%;
+            font-size: 41.02564102564102vw;
+        }
+
+        .alert-page-message {
+            font-size: 5.641025641025641vw;
+            font-weight: 500;
+            color: #fff;
+            -webkit-text-fill-color: white;
+            line-height: 120%;
+            padding: 0 20px;
+            transform: translateY(-20px);
+        }
+
+        .alert-page-text:before,
+        .alert-page-text:after {
+            position: absolute;
+            content: '';
+        }
+
+        .alert-page-text:before {
+            z-index: -2;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: inherit;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .alert-page-text:after {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 143, 190, 0.87);
+
+        }
+
+        .alert-page-text-bg {
+            background-image: url(banner.jpg);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @media (min-width:768px) {
+            .alert-page-text {
+                font-size: 30vw;
+            }
+
+            .alert-page-message {
+                font-size: 3vw;
+                max-width: 62.5vw;
+            }
+        }
+        @media (min-width:992px) {
+            .alert-page-text {
+                font-size: 26.041666666666668vw;
+            }
+
+            .alert-page-message {
+                font-size: 2.34375vw;
+                max-width: 62.5vw;
+            }
+        }
+        @media (min-width:1200px) {
+            .alert-page-text {
+                font-size: 26.041666666666668vw;
+            }
+
+            .alert-page-message {
+                font-size: 2.34375vw;
+                max-width: 62.5vw;
+            }
+        }
+        @media (min-width:1920px) {
+            .alert-page-text {
+                font-size: 26.041666666666668vw;
+            }
+
+            .alert-page-message {
+                font-size: 2.34375vw;
+                max-width: 62.5vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="alert-page">
+        <div class="alert-page-wrapper">
+            <div class="alert-page-text alert-page-text-bg">
+                500
+                <div class="alert-page-message">
+                    Lorem ipsum
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
